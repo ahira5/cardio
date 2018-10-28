@@ -168,16 +168,17 @@ private  SpeechletResponse getworkoutintent(Intent intent) {
         	String s1="https://s3.amazonaws.com/examplebucket-one/cardio/jumping+jack.gif";
         	i.setLargeImageUrl(s1);
         	responseText="Start the workout by doing a  10 minutes of walking,jogging \n"
-        			   +"\n Start doing Jumping Jacks ,\n"
+        			   +"\n Start doing 10 Jumping Jacks ,\n"
          			   +"\n for that ,\n"
         	           +  "\n Stand up straight.\n"
         	           + "\n Relax your shoulders along your spine.\n"
         	           + "\n Hold the top of your head up between your shoulders.\n"
         	           +"\n Hold your arms at your sides .\n"
         	           + "\n Stand in an upright position so that your feet are below your shoulders.\n"
+        	           +"\n and then , \n"
         	           + "\n Jump and extend your arms overhead.\n"
         	           +"\n lift your arms overhead until your hands are about shoulder width apart.\n"
-        	           + "\n Repeat as needed \n";
+        	           + "\n Repeat for 10 Jumping Jacks\n";
         	break;
         case "Wednesday":
         	String s2="https://s3.amazonaws.com/examplebucket-one/cardio/burpee.gif";
@@ -187,7 +188,8 @@ private  SpeechletResponse getworkoutintent(Intent intent) {
          			    +"\n for that ,\n"
         	            +"\n Begin in a standing position.\n"
         	            + "\n Your feet should be shoulder-width apart.\n"
-        	            + "\n  Now, lower your body into a squatting position, placing your  hands firmly on the floor in front of you.\n"
+        	            + "\n  Now, lower your body into a squatting position, "
+        	            + "\n placing your  hands firmly on the floor in front of you.\n"
         	            +"\n Kick your feet back so that you are in push-up position."
         	            + "\n Lower your chest to do a push-up.\n"
         	            +"\n Kick your feet back to their original position. \n"
@@ -199,47 +201,54 @@ private  SpeechletResponse getworkoutintent(Intent intent) {
         	String s3="https://s3.amazonaws.com/examplebucket-one/cardio/crunchesgif.gif";
         	i.setLargeImageUrl(s3);
         	responseText="Start the workout by doing a 10 minutes of walking or jogging \n"
-        			 +"\n Start doing Crunches ,\n"
+        			 +"\n Start doing 10  Crunches ,\n"
          			 +"\n for that ,\n"
         		     +"\n Lie on your back on an exercise mat. \n"
         			 +"\n Bend your knees so your feet are flat on the floor. \n"
         			 +"\n Place your fingertips behind your neck or head \n"
+        			 +"\n and then ,\n"
         			 +" \n Lift your shoulder blades off the mat with a smooth, controlled motion. \n"
         		+"\n Lower yourself back down with a slow, steady motion. \n " 
-        		+"\n  Repeat as needed.\n"	
+        		+"\n  Repeat for 10 Crunches.\n"	
         			;
         	break;
         case "friday":
         	String s4="https://s3.amazonaws.com/examplebucket-one/cardio/lunges.gif";
         	i.setLargeImageUrl(s4);
         	responseText="Start the workout by doing a  10 minutes of walking or jogging \n"
-        			     +"\n Start Lunges ,\n"
+        			     +"\n Start doing 10  Lunges ,\n"
          			     +"\n for that ,\n"
                        	 + "\n Start by standing up straight with your feet hip-width apart and flat on the ground. \n"
-        			     +" \n  Throughout a lunge exercise your arms \n "
-        			     + "\n  and hands can be in any position \n"
+           			     + "\n  Arms and hands can be in any position \n"
+                       	 +"\n Now ,\n"
                          +"\n Take a big step forward with your right leg. \n"
                          + "\n Place your right foot on the ground, heel first. \n"
-                         +"\n  Lean your body forward so that about 70% of your weight is on your front foot.\n"
+                         +"\n and then ,\n"
+                         +"\n  Lean your body forward so that ,\n"
+                         + "\n about 70% of your weight is on your front foot.\n"
+                         +"\n Now ,\n"
                          +"\n Lower your body until your right knee is at a 90-degree angle. \n"
+                         +"\n then ,\n"
                          +"\n Push yourself upwards with your right foot. \n"
                          +"\n Return your body to the position you started in,\n"
-                         +"\n Repeat this several times and then switch to your left side.\n";        	
+                         +"\n Repeat this for 10  Lunges and then switch to your left side.\n";        	
         	break;
         case "Saturday":
         	String s5="https://s3.amazonaws.com/examplebucket-one/cardio/mountainclimbers.gif";
         	i.setLargeImageUrl(s5);
         	responseText="Start the workout by doing a  10 minutes of walking or jogging \n"
-        	        +"\n Start doing Mountain Climbers ,\n"
+        	        +"\n Start doing 10 Mountain Climbers ,\n"
         			+"\n for that ,\n"
                 	+"\n Get into plank position. \n"
                 	+"\n  Get down on the floor on your hands and knees. \n"
                 	+"\n Extend your legs out behind you, balancing on the balls and toes.\n"
                 	+"\n Pull one knee up and in toward your midsection \n"
+                	+"\n and then \n"
                 	+"\n Lift one foot and begin bending the knee \n "
                 	+ "\n As you pull it up between the front of your body and the floor. \n"
                   	+"\n Repeat the action with your other knee. \n"
-                	+"\n Continue alternating the movement with both knees. \n";        	
+                	+"\n Continue alternating the movement with both knees. \n"
+                  	+"\n Repeat for 10 Mountain Climbers.";        	
                 	break;
         case "Sunday":
         	String s6="https://s3.amazonaws.com/examplebucket-one/cardio/sunday-funday.jpg";
@@ -249,34 +258,7 @@ private  SpeechletResponse getworkoutintent(Intent intent) {
         default:
         	responseText="sorry!!please try again"+value;
         
-        	/*//Object value1;
-        	StringimageUpdate(value);
-        	{
-        		if(value.equalsIgnoreCase((String) Monday))
-        		{
-        			
-                   // String s="https://s3.amazonaws.com/examplebucket-one/cardio/1000-points-workout.jpg";
-                   // i.setSmallImageUrl(s);
-                   
-        		}
-        		
-        	}
-        	/*String Monday;
-			if (value == Monday)
-           	{
-           		JFrame f=new JFrame();
-           		ImageIcon i= new ImageIcon("1000-points-workout.jpg");
-           		JLabel l=new JLabel(i);
-           		f.add(l);
-           		f.setDefaultCloseOperation
-                (JFrame.EXIT_ON_CLOSE);
-         f.setVisible(true);
-           	}
-        	else
-        	{
-        	 responseText= "sorry try again"+value;     	}
-        		
-        */
+        
         
         }
         
